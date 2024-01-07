@@ -17,7 +17,8 @@ func _physics_process(delta: float)-> void:
 
 func _get_input():
 	var move_direction = int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left"))
-	velocity.x = move_speed * move_direction
+	velocity.x = lerp(velocity.x, move_speed * move_direction, 0.2)
+	
 	if move_direction != 0:
 		$texture.scale.x = move_direction
 
