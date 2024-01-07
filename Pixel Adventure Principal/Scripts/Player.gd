@@ -15,8 +15,9 @@ func _physics_process(delta: float)-> void:
 		velocity.y	= jump_force / 4
 	
 	move_and_slide(velocity)
-	
 
 func _get_input():
 	var move_direction = int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left"))
 	velocity.x = move_speed * move_direction
+	if move_direction != 0:
+		$texture.scale.x = move_direction
