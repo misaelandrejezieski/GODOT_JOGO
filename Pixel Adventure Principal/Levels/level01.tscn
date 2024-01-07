@@ -38,7 +38,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 112.75, 7.125 )
+extents = Vector2( 159, 4.5625 )
 
 [node name="level01" type="Node2D"]
 
@@ -61,5 +61,5 @@ anims/RESET = SubResource( 3 )
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 154, 162 )
+position = Vector2( 160, 189 )
 shape = SubResource( 4 )
