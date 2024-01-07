@@ -130,7 +130,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id=5]
 resource_name = "run"
-length = 1.2
+length = 1.1
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("texture:hframes")
@@ -151,10 +151,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("texture:texture")
@@ -181,8 +181,8 @@ position = Vector2( 0, -4 )
 texture = ExtResource( 2 )
 hframes = 11
 
-[node name="Anime" type="AnimationPlayer" parent="."]
-autoplay = "Idle"
+[node name="anime" type="AnimationPlayer" parent="."]
+autoplay = "run"
 anims/Idle = SubResource( 2 )
 anims/RESET = SubResource( 3 )
 anims/hit = SubResource( 6 )
