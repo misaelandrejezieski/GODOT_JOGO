@@ -79,3 +79,7 @@ shape = SubResource( 5 )
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 325, 96 )
 shape = SubResource( 5 )
+
+[node name="TileMap" type="TileMap" parent="."]
+cell_size = Vector2( 16, 16 )
+format = 1
