@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Pixel Adventure 1/Free/Main Characters/Ninja Frog/Run (32x32).png" type="Texture" id=2]
+[ext_resource path="res://Pixel Adventure 1/Free/Main Characters/Ninja Frog/Hit (32x32).png" type="Texture" id=3]
 [ext_resource path="res://Pixel Adventure 1/Free/Main Characters/Ninja Frog/Idle (32x32).png" type="Texture" id=4]
 [ext_resource path="res://Pixel Adventure 1/Free/Main Characters/Ninja Frog/Double Jump (32x32).png" type="Texture" id=5]
 
@@ -45,6 +46,47 @@ tracks/2/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ 11 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "hit"
+length = 0.7
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("textura:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.388061, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 3, 4, 4, 5 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("textura:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("textura:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.388061 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 7, 7 ]
 }
 
 [sub_resource type="Animation" id=6]
@@ -184,6 +226,7 @@ frame = 1
 [node name="anime" type="AnimationPlayer" parent="."]
 autoplay = "idle"
 anims/RESET = SubResource( 5 )
+anims/hit = SubResource( 9 )
 anims/idle = SubResource( 6 )
 anims/jump = SubResource( 8 )
 anims/run = SubResource( 7 )

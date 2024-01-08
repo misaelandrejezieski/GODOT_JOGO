@@ -43,5 +43,6 @@ func _set_animation():
 	elif velocity.x != 0:
 		anime= "run"
 	
+	
 	if $anime.assigned_animation != anime:
 		$anime.play(anime)
