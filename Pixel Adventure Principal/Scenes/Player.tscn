@@ -181,7 +181,7 @@ texture = ExtResource( 4 )
 hframes = 11
 
 [node name="anime" type="AnimationPlayer" parent="."]
-autoplay = "run"
+autoplay = "idle"
 anims/RESET = SubResource( 5 )
 anims/idle = SubResource( 6 )
 anims/jump = SubResource( 8 )

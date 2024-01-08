@@ -10,10 +10,11 @@ onready var raycasts = $raycasts
 
 func _physics_process(delta: float)-> void:
 	velocity.y += gravity * delta
+	_set_animation()
 	_get_input()
 	velocity = move_and_slide(velocity)
 	is_grounded =_check_is_ground()
-	_set_animation()
+	
   
 
 func _get_input():
