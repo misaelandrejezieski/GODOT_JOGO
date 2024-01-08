@@ -145,6 +145,7 @@ texture = ExtResource( 2 )
 hframes = 11
 
 [node name="anime" type="AnimationPlayer" parent="."]
+autoplay = "idle"
 anims/RESET = SubResource( 3 )
 anims/hit = SubResource( 6 )
 anims/idle = SubResource( 2 )
