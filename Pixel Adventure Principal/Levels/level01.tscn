@@ -1149,6 +1149,20 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 53/shape_one_way_margin = 0.0
 53/shapes = [  ]
 53/z_index = 0
+54/name = "Terrain (16x16).png 54"
+54/texture = ExtResource( 3 )
+54/tex_offset = Vector2( 0, 0 )
+54/modulate = Color( 1, 1, 1, 1 )
+54/region = Rect2( 192, 64, 16, 16 )
+54/tile_mode = 0
+54/occluder_offset = Vector2( 0, 0 )
+54/navigation_offset = Vector2( 0, 0 )
+54/shape_offset = Vector2( 0, 0 )
+54/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+54/shape_one_way = false
+54/shape_one_way_margin = 0.0
+54/shapes = [  ]
+54/z_index = 0
 
 [node name="level01" type="Node2D"]
 
