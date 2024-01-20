@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
+
 int main() {
+	
+	setlocale(LC_ALL,"Portuguese");
+	
     char company_name[] = "Benco";
     char sheet_type1[] = "chapa azul";
     char sheet_type2[] = "chapa verde";
@@ -33,10 +37,10 @@ int main() {
 
     printf("Serão necessários %.2f kg de %s e %.2f kg de mixpaper para produzir %d caixas de iogurte sabor %s.\n", total_sheet, sheet_type1, total_mixpaper, boxes_per_production, flavor);
 
-    printf("Deseja inserir outro sabor? (y/n): ");
+    printf("Deseja inserir outro sabor? (s/n): ");
     scanf(" %c", &another_flavor);
 
-    while (another_flavor == 'y') {
+    while (another_flavor == 's') {
         printf("Insira o sabor do iogurte: ");
         scanf("%s", flavor);
 
@@ -54,7 +58,7 @@ int main() {
 
         printf("Serão necessários %.2f kg de %s e %.2f kg de mixpaper para produzir %d caixas de iogurte sabor %s.\n", total_sheet, sheet_type1, total_mixpaper, boxes_per_production, flavor);
 
-        printf("Deseja inserir outro sabor? (y/n): ");
+        printf("Deseja inserir outro sabor? (s/n): ");
         scanf(" %c", &another_flavor);
     }
 
