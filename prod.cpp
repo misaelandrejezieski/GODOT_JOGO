@@ -13,7 +13,7 @@ int main() {
     int escolha;
     char resposta;
     do {
-        cout << "Escolha a linha de producao:\n1 - Benco\n2 - Prime Pack\n";
+        cout << "Escolha a linha de producao:\n1 - Benco\n2 - Prime Pack\n3 - Elton Flan\n";
         cin >> escolha;
 
         if (escolha == 1) {
