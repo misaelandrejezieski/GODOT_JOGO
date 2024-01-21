@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <string.h>
 
 
 int main() {
-    char nome_empresa[] = "Benco";
+    char nome_linha[] = "Benco";
     char tipo_chapa1[] = "chapa azul";
     char tipo_chapa2[] = "chapa verde";
-    char nomes_produtos[][50] = {"morango Batavo", "tradicional Batavo", "grego morango itambé", "tradicional itambé", "light morango Batava", "light tradicional Batavo", "pessego Batavo"};
+    char nomes_produtos[][50] = {"morango Batavo", "tradicional Batavo", "morango itambé",
+	 "tradicional itambé", "light morango Batava", "light tradicional Batavo", "pessego Batavo"};
     float chapa_por_caixa = 0.15;
     float mixpaper_por_caixa = 0.025;
     int caixas_por_producao;
