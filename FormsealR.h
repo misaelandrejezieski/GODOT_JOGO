@@ -1,0 +1,18 @@
+class FormsealR {
+    public:
+        char nome_linha[11] = "Formseal R";
+        char tipo_chapa1[14] = "chapa marrom";
+        char tipo_chapa2[14] = "chapa amarela";
+        char nomes_produtos[2][50] = {"chocolate batavo", "chocolate itambe"};
+        char nomes_mixpaper[2][50] = {"mixpaper chocolate batavo", "mixpaper chocolate itambe"};
+        float chapa_por_caixa = 0.432;
+        float mixpaper_por_caixa = 0.025;
+        int caixas_por_producao;
+        int total_caixas_por_palete = 230;
+        float total_chapa;
+        float total_mixpaper;
+        int codigo_produto;
+        float total_production_time;
+        char outro_produto;
+};
+
