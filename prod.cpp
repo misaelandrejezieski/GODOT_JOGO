@@ -54,7 +54,7 @@ int main() {
 
             p.total_chapa = p.caixas_por_producao * p.chapa_por_caixa;
             p.total_mixpaper = p.caixas_por_producao * p.mixpaper_por_caixa;
-            p.total_production_time = (float) p.caixas_por_producao / 7.66;
+            p.total_production_time = (float) p.caixas_por_producao / 7.66 / 60;
 
             cout << "\nSerao necessarios " << p.total_chapa << " kg de " << p.tipo_chapa1 << endl;
             cout << p.total_mixpaper << " kg de " << p.nomes_mixpaper[p.codigo_produto - 1] << " para produzir " << p.caixas_por_producao << " caixas de chocolate." << endl;
