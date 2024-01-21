@@ -64,6 +64,28 @@ int main() {
             cout << p.total_mixpaper << " kg de " << p.nomes_mixpaper[p.codigo_produto - 1] << " para produzir " << p.caixas_por_producao << " caixas de chocolate." << endl;
             cout << "O tempo necessario para produzir " << p.caixas_por_producao << " caixas de chocolate e de " << p.total_production_time << " horas." << endl;
 
+        } else if (escolha == 3) {
+            PrimePack p;
+            cout << "Insira o codigo do produto: ";
+            cin >> p.codigo_produto;
+
+          
+            if (p.codigo_produto == 3) {
+             strcpy(p.tipo_chapa1, "chapa branca");
+             strcpy(p.tipo_chapa2, "chapa branca");
+           }
+
+            cout << "Insira o numero de caixas por producao: ";
+            cin >> p.caixas_por_producao;
+
+            p.total_chapa = p.caixas_por_producao * p.chapa_por_caixa;
+            p.total_mixpaper = p.caixas_por_producao * p.mixpaper_por_caixa;
+            p.total_production_time = (float) p.caixas_por_producao / 7.66 / 60;
+
+            cout << "\nSerao necessarios " << p.total_chapa << " kg de " << p.tipo_chapa1 << endl;
+            cout << p.total_mixpaper << " kg de " << p.nomes_mixpaper[p.codigo_produto - 1] << " para produzir " << p.caixas_por_producao << " caixas de chocolate." << endl;
+            cout << "O tempo necessario para produzir " << p.caixas_por_producao << " caixas de chocolate e de " << p.total_production_time << " horas." << endl;
+
         } else {
             cout << "Opcao invalida. Tente novamente." << endl;
         }
