@@ -13,6 +13,8 @@ using namespace std;
 int main() {
     int escolha;
     char resposta;
+    
+    printf("SOBREMESA");
     do {
          cout << "Escolha a linha de producao:\n1 - Benco\n2 - Prime Pack\n3 - Elton Flan\n4 - Formseal R\n";
         cin >> escolha;
