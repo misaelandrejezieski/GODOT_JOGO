@@ -1,6 +1,6 @@
 class Benco {
     public:
-        char nome_linha[6] = "Benco";
+        char nome_linha[7] = "Benco";
         char tipo_chapa1[11] = "chapa azul";
         char tipo_chapa2[12] = "chapa verde";
         char nomes_produtos[7][50] = {"morango Batavo", "tradicional Batavo", "morango itambe",
