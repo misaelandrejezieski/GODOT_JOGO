@@ -90,23 +90,21 @@ int main() {
 
         } else if (escolha == 4){
 			FormsealR f;
-    cout << "Insira o codigo do produto: ";
-    cin >> f.codigo_produto;
+    		cout << "Insira o codigo do produto: ";
+    		cin >> f.codigo_produto;
 
-    cout << "Insira o numero de caixas por producao: ";
-    cin >> f.caixas_por_producao;
+    		cout << "Insira o numero de caixas por producao: ";
+    		cin >> f.caixas_por_producao;
 
-    f.total_chapa = f.caixas_por_producao * f.chapa_por_caixa;
-    f.total_mixpaper = f.caixas_por_producao * f.mixpaper_por_caixa;
-    f.total_production_time = (float) f.caixas_por_producao / 7.6 /60;
+    		f.total_chapa = f.caixas_por_producao * f.chapa_por_caixa;
+    		f.total_mixpaper = f.caixas_por_producao * f.mixpaper_por_caixa;
+    		f.total_production_time = (float) f.caixas_por_producao / 7.6 /60;
 
-    cout << "\nSerao necessarios " << f.total_chapa << " kg de " << f.tipo_chapa1 << endl;
-    cout << f.total_mixpaper << " kg de " << f.nomes_mixpaper[f.codigo_produto - 1] << " para produzir " << f.caixas_por_producao << " caixas de chocolate." << endl;
-    cout << "O tempo necessario para produzir " << f.caixas_por_producao << " caixas de chocolate e de " << f.total_production_time << " horas." << endl;
+    		cout << "\nSerao necessarios " << f.total_chapa << " kg de " << f.tipo_chapa1 << endl;
+    		cout << f.total_mixpaper << " kg de " << f.nomes_mixpaper[f.codigo_produto - 1] << " para produzir " << f.caixas_por_producao << " caixas de chocolate." << endl;
+    		cout << "O tempo necessario para produzir " << f.caixas_por_producao << " caixas de chocolate e de " << f.total_production_time << " horas." << endl;
 
-		}
-		
-		else {
+		}else {
             cout << "Opcao invalida. Tente novamente." << endl;
         }
 
