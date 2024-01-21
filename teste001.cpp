@@ -17,6 +17,7 @@ int main() {
     float total_chapa;
     float total_mixpaper;
     int codigo_produto;
+    float total_production_time;
 
     printf("Insira o codigo do produto: ");
     scanf("%d", &codigo_produto);
@@ -35,11 +36,14 @@ int main() {
     total_caixas_por_dia = 230;
     total_chapa = caixas_por_producao * chapa_por_caixa;
     total_mixpaper = caixas_por_producao * mixpaper_por_caixa;
+    total_production_time = (float) caixas_por_producao / 7.6;
 
     printf("\nSerao necessarios %.2f kg de %s e %.2f kg de mixpaper para produzir %d caixas de iogurte.\n", total_chapa, tipo_chapa1, total_mixpaper, caixas_por_producao);
+    printf("O tempo necessário para produzir a demanda diária é de %.2f minutos.\n", total_production_time);
 
     return 0;
 }
+
 
 
 
