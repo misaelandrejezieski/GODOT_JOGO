@@ -14,9 +14,9 @@ int main() {
     int escolha;
     char resposta;
     
-    printf("SOBREMESA");
+    printf("SOBREMESA\n");
     do {
-         cout << "Escolha a linha de producao:\n1 - Benco\n2 - Prime Pack\n3 - Elton Flan\n4 - Formseal R\n";
+         cout << "\nEscolha a linha de producao:\n1 - Benco\n2 - Prime Pack\n3 - Elton Flan\n4 - Formseal R\n";
         cin >> escolha;
 
         if (escolha == 1) {
