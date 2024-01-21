@@ -8,7 +8,7 @@ class PrimePack {
         float chapa_por_caixa = 0.209;
         float mixpaper_por_caixa = 0.025;
         int caixas_por_producao;
-        int total_caixas_por_palete = 230;
+        int total_caixas_por_palete = 168;
         float total_chapa;
         float total_mixpaper;
         int codigo_produto;
