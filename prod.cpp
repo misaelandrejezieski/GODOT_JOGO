@@ -66,26 +66,26 @@ int main() {
             cout << "O tempo necessario para produzir " << p.caixas_por_producao << " caixas de chocolate e de " << p.total_production_time << " horas." << endl;
 
         } else if (escolha == 3) {
-            PrimePack p;
+            EltonFlan  e;
             cout << "Insira o codigo do produto: ";
-            cin >> p.codigo_produto;
+            cin >> e.codigo_produto;
 
           
-            if (p.codigo_produto == 3) {
-             strcpy(p.tipo_chapa1, "chapa branca");
-             strcpy(p.tipo_chapa2, "chapa branca");
+            if (e.codigo_produto == 3) {
+             strcpy(e.tipo_chapa1, "chapa branca");
+             strcpy(e.tipo_chapa2, "chapa branca");
            }
 
             cout << "Insira o numero de caixas por producao: ";
-            cin >> p.caixas_por_producao;
+            cin >> e.caixas_por_producao;
 
-            p.total_chapa = p.caixas_por_producao * p.chapa_por_caixa;
-            p.total_mixpaper = p.caixas_por_producao * p.mixpaper_por_caixa;
-            p.total_production_time = (float) p.caixas_por_producao / 7.66 / 60;
+            e.total_chapa = e.caixas_por_producao * e.chapa_por_caixa;
+            e.total_mixpaper = e.caixas_por_producao * e.mixpaper_por_caixa;
+            e.total_production_time = (float) e.caixas_por_producao / 7.66 / 60;
 
-            cout << "\nSerao necessarios " << p.total_chapa << " kg de " << p.tipo_chapa1 << endl;
-            cout << p.total_mixpaper << " kg de " << p.nomes_mixpaper[p.codigo_produto - 1] << " para produzir " << p.caixas_por_producao << " caixas de chocolate." << endl;
-            cout << "O tempo necessario para produzir " << p.caixas_por_producao << " caixas de chocolate e de " << p.total_production_time << " horas." << endl;
+            cout << "\nSerao necessarios " << e.total_chapa << " kg de " << e.tipo_chapa1 << endl;
+            cout << e.total_mixpaper << " kg de " << e.nomes_mixpaper[e.codigo_produto - 1] << " para produzir " << e.caixas_por_producao << " caixas de Flan." << endl;
+            cout << "O tempo necessario para produzir " << e.caixas_por_producao << " caixas de flan e de " << e.total_production_time << " horas." << endl;
 
         } else {
             cout << "Opcao invalida. Tente novamente." << endl;
