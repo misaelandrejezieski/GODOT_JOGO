@@ -38,8 +38,8 @@ int main() {
     total_mixpaper = caixas_por_producao * mixpaper_por_caixa;
     total_production_time = (float) caixas_por_producao / 7.6;
 
-    printf("\nSerao necessarios %.2f kg de %s e %.2f kg de mixpaper para produzir %d caixas de iogurte.\n", total_chapa, tipo_chapa1, total_mixpaper, caixas_por_producao);
-    printf("O tempo necessário para produzir a demanda diaria sera de %.2f minutos.\n", total_production_time);
+    printf("\nSerao necessarios %.2f kg de %s", tipo_chapa1, " e %.2f kg de mixpaper para produzir %d caixas de iogurte.\n", total_chapa, tipo_chapa1, total_mixpaper, caixas_por_producao);
+    printf("O tempo necessario para produzir a demanda diaria sera de %.2f minutos.\n", total_production_time);
 
     return 0;
 }
