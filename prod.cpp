@@ -112,7 +112,7 @@ int main() {
             cout << "Opcao invalida. Tente novamente." << endl;
         }
 
-        cout << "Deseja inserir mais produtos? (s/n): ";
+        cout << "\n** Deseja inserir mais produtos? (s/n): ";
         cin >> resposta;
     } while (resposta == 's' || resposta == 'S');
 
