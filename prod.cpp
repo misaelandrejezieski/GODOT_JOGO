@@ -5,6 +5,7 @@
 #include <iostream>
 #include "Benco.h"
 #include "PrimePack.h"
+#include "EltonFlan.h"
 
 using namespace std;
 
