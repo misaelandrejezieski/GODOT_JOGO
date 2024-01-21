@@ -44,10 +44,14 @@ int main() {
             cout << "Insira o codigo do produto: ";
             cin >> p.codigo_produto;
 
+          
             if (p.codigo_produto == 3) {
-                strcpy(p.tipo_chapa1, "chapa amarela");
-                strcpy(p.tipo_chapa2, "chapa amarela");
-            }
+             strcpy(p.tipo_chapa1, "chapa amarela");
+             strcpy(p.tipo_chapa2, "chapa amarela");
+           } else {
+                   strcpy(p.tipo_chapa1, "chapa marrom");
+                   strcpy(p.tipo_chapa2, "chapa amarela");
+           }
 
             cout << "Insira o numero de caixas por producao: ";
             cin >> p.caixas_por_producao;
