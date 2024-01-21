@@ -20,29 +20,36 @@ int main() {
     float total_mixpaper;
     int codigo_produto;
     float total_production_time;
+    char outro_produto;
 
-    printf("Insira o codigo do produto: ");
-    scanf("%d", &codigo_produto);
+    do {
+        printf("Insira o codigo do produto: ");
+        scanf("%d", &codigo_produto);
 
-    if (codigo_produto == 1 || codigo_produto == 2 || codigo_produto == 5 || codigo_produto == 6 || codigo_produto == 9) {
-        strcpy(tipo_chapa1, "chapa azul");
-        strcpy(tipo_chapa2, "chapa azul");
-    } else {
-        strcpy(tipo_chapa1, "chapa verde");
-        strcpy(tipo_chapa2, "chapa verde");
-    }
+        if (codigo_produto == 1 || codigo_produto == 2 || codigo_produto == 5 || codigo_produto == 6 || codigo_produto == 9) {
+            strcpy(tipo_chapa1, "chapa azul");
+            strcpy(tipo_chapa2, "chapa azul");
+        } else {
+            strcpy(tipo_chapa1, "chapa verde");
+            strcpy(tipo_chapa2, "chapa verde");
+        }
 
-    printf("Insira o numero de caixas por producao: ");
-    scanf("%d", &caixas_por_producao);
+        printf("Insira o numero de caixas por producao: ");
+        scanf("%d", &caixas_por_producao);
 
-    total_caixas_por_dia = 230;
-    total_chapa = caixas_por_producao * chapa_por_caixa;
-    total_mixpaper = caixas_por_producao * mixpaper_por_caixa;
-    total_production_time = (float) caixas_por_producao / 7.6;
+        total_caixas_por_dia = 230;
+        total_chapa = caixas_por_producao * chapa_por_caixa;
+        total_mixpaper = caixas_por_producao * mixpaper_por_caixa;
+        total_production_time = (float) caixas_por_producao / 7.6 /60;
 
-    printf("\nSerao necessarios %.2f kg de %s \n %.2f kg de %s para produzir %d caixas de iogurte.\n", total_chapa, tipo_chapa1, total_mixpaper, nomes_mixpaper[codigo_produto - 1], caixas_por_producao);
-    printf("O tempo necessario para produzir a demanda diaria sera de %.2f minutos.\n", total_production_time);
+        printf("\nSerao necessarios %.2f kg de %s \n%.2f kg de %s para produzir %d caixas de iogurte.\n", total_chapa, tipo_chapa1, total_mixpaper, nomes_mixpaper[codigo_produto - 1], caixas_por_producao);
+        printf("O tempo necessario para produzir a demanda diaria sera de %.2f horas.\n", total_production_time);
+
+        printf("Deseja inserir outro produto? (s/n): ");
+        scanf(" %c", &outro_produto);
+    } while (outro_produto == 's');
 
     return 0;
 }
+
 
