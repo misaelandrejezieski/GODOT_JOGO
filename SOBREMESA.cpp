@@ -129,7 +129,7 @@ int main() {
 
             cout << "\nSerao necessarios " << e.total_chapa << " kg de " << e.tipo_chapa1 << endl;
             cout << e.total_mixpaper << " kg de " << e.nomes_mixpaper[e.codigo_produto - 1] << " para produzir " << e.caixas_por_producao << " caixas de Flan" << e.codigo_produto[e.nomes_produtos] << endl;
-            cout << "O tempo necessario para produzir " << e.caixas_por_producao << " caixas de "<< f.codigo_produto[f.nomes_produtos] << " e de " << e.total_production_time << " horas." << endl;
+            cout << "O tempo necessario para produzir " << e.caixas_por_producao << " caixas de "<< e.codigo_produto[e.nomes_produtos] << " e de " << e.total_production_time << " horas." << endl;
 
         } else if (escolha == 4){
 			FormsealR f;
