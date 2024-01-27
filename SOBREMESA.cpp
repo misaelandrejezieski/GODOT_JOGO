@@ -29,10 +29,12 @@ int main() {
             if (b.codigo_produto == 1 || b.codigo_produto == 2 || b.codigo_produto == 3 || b.codigo_produto == 4 || b.codigo_produto == 7) {
                 strcpy(b.tipo_chapa1, "chapa azul");
                 strcpy(b.tipo_chapa2, "chapa azul");
-            } else {
+            } else if (b.codigo_produto == 6 || b.codigo_produto == 5){
                 strcpy(b.tipo_chapa1, "chapa verde");
                 strcpy(b.tipo_chapa2, "chapa verde");
-            }
+            } else {
+            	cout << "Código inválido! ";
+			}
 
             cout << "Insira o numero de caixas por producao: ";
             cin >> b.caixas_por_producao;
