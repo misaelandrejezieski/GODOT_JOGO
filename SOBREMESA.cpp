@@ -26,8 +26,12 @@ int main() {
             Benco b;
             
             for(int i = 0; i < 7; i++) {
-        	 printf("%d ", b.nomes_produtos[i]);
-			 }
+       			for(int j = 0; j < 50; j++) {
+            		printf("%c ", b.nomes_produtos[i][j]);
+        		}
+       			 printf("\n");
+    		}
+
          
             cout << "Insira o codigo do produto: ";
                   
