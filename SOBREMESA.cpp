@@ -88,7 +88,7 @@ int main() {
             cin >> e.codigo_produto;
 
           
-            if (e.codigo_produto == 3) {
+            if (e.codigo_produto == 1 || e.codigo_produto == 2 || e.codigo_produto == 3 || e.codigo_produto == 4 || e.codigo_produto == 5) {
              strcpy(e.tipo_chapa1, "chapa branca");
              strcpy(e.tipo_chapa2, "chapa branca");
            } else {
