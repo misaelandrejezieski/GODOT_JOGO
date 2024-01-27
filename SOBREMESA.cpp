@@ -13,9 +13,6 @@ using namespace std;
 int main() {
     int escolha;
     char resposta;
-    printf("-----------------------------------\n");
-    printf("            SOBREMESA\n");
-    printf("-----------------------------------\n");
     
     do {
     		printf("-----------------------------------\n");
