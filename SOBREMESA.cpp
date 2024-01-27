@@ -115,7 +115,8 @@ int main() {
         cout << "\n** Deseja inserir mais produtos? (s/n): ";
         cin >> resposta;
     } while (resposta == 's' || resposta == 'S');
-			cout << "Sayonaha babaca! ";
+    		cout << "### Aperte ENTER para sair. ####";
+			cout << "@@@ Sayonaha babaca! @@@";
     		return 0;
 }
 
