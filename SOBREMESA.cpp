@@ -91,7 +91,13 @@ int main() {
             if (e.codigo_produto == 3) {
              strcpy(e.tipo_chapa1, "chapa branca");
              strcpy(e.tipo_chapa2, "chapa branca");
-           }
+           } else {
+            	cout << "Codigo invalido!\n";
+            	system("pause");
+            	system("cls");
+				return main();
+            	
+				}
 
             cout << "Insira o numero de caixas por producao: ";
             cin >> e.caixas_por_producao;
