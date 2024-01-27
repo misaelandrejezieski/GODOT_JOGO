@@ -96,7 +96,7 @@ int main() {
 
             cout << "\nSerao necessarios " << p.total_chapa << " kg de " << p.tipo_chapa1 << endl;
             cout << p.total_mixpaper << " kg de " << p.nomes_mixpaper[p.codigo_produto - 1] << " para produzir " << p.caixas_por_producao << " caixas de " << p.nomes_produtos[p.codigo_produto -1] << "." << endl;
-            cout << "O tempo necessario para produzir " << p.caixas_por_producao << " caixas de" << p.nomes_produtos[p.codigo_produto -1] << " e de " << p.total_production_time << " horas." << endl;
+            cout << "O tempo necessario para produzir " << p.caixas_por_producao << " caixas de " << p.nomes_produtos[p.codigo_produto -1] << " e de " << p.total_production_time << " horas." << endl;
 
         } else if (escolha == 3) {
             EltonFlan  e;
@@ -128,8 +128,8 @@ int main() {
             e.total_production_time = (float) e.caixas_por_producao / 7.66 / 60;
 
             cout << "\nSerao necessarios " << e.total_chapa << " kg de " << e.tipo_chapa1 << endl;
-            cout << e.total_mixpaper << " kg de " << e.nomes_mixpaper[e.codigo_produto - 1] << " para produzir " << e.caixas_por_producao << " caixas de " << e.codigo_produto[e.nomes_produtos] << endl;
-            cout << "O tempo necessario para produzir " << e.caixas_por_producao << " caixas de "<< e.codigo_produto[e.nomes_produtos] << " e de " << e.total_production_time << " horas." << endl;
+            cout << e.total_mixpaper << " kg de " << e.nomes_mixpaper[e.codigo_produto - 1] << " para produzir " << e.caixas_por_producao << " caixas de " << e.nomes_produtos[e.codigo_produto -1] << endl;
+            cout << "O tempo necessario para produzir " << e.caixas_por_producao << " caixas de "<< e.nomes_produtos[e.codigo_produto -1] << " e de " << e.total_production_time << " horas." << endl;
 
         } else if (escolha == 4){
 			FormsealR f;
