@@ -101,6 +101,17 @@ int main() {
 
             cout << "Insira o numero de caixas por producao: ";
             cin >> e.caixas_por_producao;
+            
+            if (e.codigo_produto == 1 || e.codigo_produto == 2) {
+             strcpy(e.tipo_chapa1, "chapa marrom");
+             strcpy(e.tipo_chapa2, "chapa marrom");
+           } else {
+            	cout << "Codigo invalido!\n";
+            	system("pause");
+            	system("cls");
+				return main();
+            	
+				}
 
             e.total_chapa = e.caixas_por_producao * e.chapa_por_caixa;
             e.total_mixpaper = e.caixas_por_producao * e.mixpaper_por_caixa;
