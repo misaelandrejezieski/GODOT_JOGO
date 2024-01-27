@@ -3,8 +3,8 @@ class Benco {
         char nome_linha[7] = "Benco";
         char tipo_chapa1[11] = "chapa azul";
         char tipo_chapa2[12] = "chapa verde";
-        char nomes_produtos[7][50] = {"morango Batavo", "tradicional Batavo", "morango itambe",
-	 "tradicional itambe", "light morango Batava", "light tradicional Batavo", "pessego Batavo"};
+        char nomes_produtos[7][50] = {"001-morango Batavo", "002-tradicional Batavo", "003-morango itambe",
+	 "004-tradicional itambe", "005-light morango Batava", "006-light tradicional Batavo", "007-pessego Batavo"};
         char nomes_mixpaper[7][50] = {"mixpaper morango Batavo", "mixpaper tradicional Batavo", "mixpaper morango itambe",
 	 "mixpaper tradicional itambe", "mixpaper light morango Batava", "mixpaper light tradicional Batavo", "mixpaper pessego Batavo"};
         float chapa_por_caixa = 0.150;
