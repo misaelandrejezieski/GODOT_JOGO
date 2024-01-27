@@ -101,18 +101,6 @@ int main() {
 
             cout << "Insira o numero de caixas por producao: ";
             cin >> e.caixas_por_producao;
-            
-            if (e.codigo_produto == 1 || e.codigo_produto == 2) {
-             strcpy(e.tipo_chapa1, "chapa marrom");
-             strcpy(e.tipo_chapa2, "chapa marrom");
-           } else {
-            	cout << "Codigo invalido!\n";
-            	system("pause");
-            	system("cls");
-				return main();
-            	
-				}
-
             e.total_chapa = e.caixas_por_producao * e.chapa_por_caixa;
             e.total_mixpaper = e.caixas_por_producao * e.mixpaper_por_caixa;
             e.total_production_time = (float) e.caixas_por_producao / 7.66 / 60;
@@ -125,6 +113,17 @@ int main() {
 			FormsealR f;
     		cout << "Insira o codigo do produto: ";
     		cin >> f.codigo_produto;
+    		
+    		if (f.codigo_produto == 1 || f.codigo_produto == 2) {
+             strcpy(f.tipo_chapa1, "chapa marrom");
+             strcpy(f.tipo_chapa2, "chapa marrom");
+           } else {
+            	cout << "Codigo invalido!\n";
+            	system("pause");
+            	system("cls");
+				return main();
+            	
+				}
 
     		cout << "Insira o numero de caixas por producao: ";
     		cin >> f.caixas_por_producao;
@@ -138,7 +137,7 @@ int main() {
     		cout << "O tempo necessario para produzir " << f.caixas_por_producao << " caixas de chocolate e de " << f.total_production_time << " horas." << endl;
 
 		}else {
-            cout << "Opcao invalida. Tente novamente." << endl;
+            cout << "Opcao invalida. Tente novamente.\n" << endl;
         }
 
         cout << "\n** Deseja inserir mais produtos? (s/n): ";
