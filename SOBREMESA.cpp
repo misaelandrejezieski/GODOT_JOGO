@@ -25,7 +25,7 @@ int main() {
         if (escolha == 1) {
             Benco b;
             
-            for(int i = 0; i < 8; i++) {
+            for(int i = 0; i < 7; i++) {
        			for(int j = 0; j < 50; j++) {
             		printf("%c ", b.nomes_produtos[i][j]);
         		}
@@ -37,7 +37,7 @@ int main() {
                   
             cin >> b.codigo_produto;
 
-            if (b.codigo_produto == 1 || b.codigo_produto == 2 || b.codigo_produto == 3 || b.codigo_produto == 4 || b.codigo_produto == 7 || b.codigo_produto == 8) {
+            if (b.codigo_produto == 1 || b.codigo_produto == 2 || b.codigo_produto == 3 || b.codigo_produto == 4 || b.codigo_produto == 7) {
                 strcpy(b.tipo_chapa1, "chapa azul");
                 strcpy(b.tipo_chapa2, "chapa azul");
             } else if (b.codigo_produto == 6 || b.codigo_produto == 5){
