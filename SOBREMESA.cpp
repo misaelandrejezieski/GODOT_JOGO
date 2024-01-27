@@ -133,7 +133,7 @@ int main() {
 
         } else if (escolha == 4){
 			FormsealR f;
-			 for(int i = 0; i < 7; i++) {
+			 for(int i = 0; i < 3; i++) {
        			for(int j = 0; j < 50; j++) {
             		printf("%c ", f.nomes_produtos[i][j]);
         		}
