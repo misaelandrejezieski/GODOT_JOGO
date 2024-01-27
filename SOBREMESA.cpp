@@ -27,6 +27,7 @@ int main() {
             
             for(int i = 0; i < 7; i++) {
        			for(int j = 0; j < 50; j++) {
+       				printf("-------------------------");
             		printf("%c ", b.nomes_produtos[i][j]);
         		}
        			 printf("\n");
