@@ -33,8 +33,9 @@ int main() {
                 strcpy(b.tipo_chapa1, "chapa verde");
                 strcpy(b.tipo_chapa2, "chapa verde");
             } else {
-            	cout << "Código inválido! ";
-			}
+            	cout << "Codigo invalido! ";
+            	
+				}
 
             cout << "Insira o numero de caixas por producao: ";
             cin >> b.caixas_por_producao;
