@@ -18,6 +18,10 @@ int main() {
     printf("-----------------------------------\n");
     
     do {
+    		printf("-----------------------------------\n");
+  	    	printf("            SOBREMESA\n");
+            printf("-----------------------------------\n");
+    
          cout << "\nEscolha a linha de producao:\n1 - Benco\n2 - Prime Pack\n3 - Elton Flan\n4 - Formseal R\n";
         cin >> escolha;
 
