@@ -162,7 +162,7 @@ int main() {
     		f.total_production_time = (float) f.caixas_por_producao / 7.6 /60;
 
     		cout << "\nSerao necessarios " << f.total_chapa << " kg de " << f.tipo_chapa1 << endl;
-    		cout << f.total_mixpaper << " kg de " << f.nomes_mixpaper[f.codigo_produto - 1] << " para produzir " << f.caixas_por_producao << " caixas de " << f.codigo_produto[f.nomes_produtos]endl;
+    		cout << f.total_mixpaper << " kg de " << f.nomes_mixpaper[f.codigo_produto - 1] << " para produzir " << f.caixas_por_producao << " caixas de " << f.codigo_produto[f.nomes_produtos] << endl;
     		cout << "O tempo necessario para produzir " << f.caixas_por_producao << " caixas de chocolate e de " << f.total_production_time << " horas." << endl;
 
 		}else {
