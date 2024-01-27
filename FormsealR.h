@@ -3,7 +3,7 @@ class FormsealR {
         char nome_linha[11] = "Formseal R";
         char tipo_chapa1[14] = "chapa marrom";
         char tipo_chapa2[14] = "chapa amarela";
-        char nomes_produtos[2][50] = {"001-chocolate batavo", "002-chocolate itambe"};
+        char nomes_produtos[2][50] = {"001-chocolate batavo", "002-chocolate itambe", "003-chocolate branco"};
         char nomes_mixpaper[2][50] = {"mixpaper chocolate batavo", "mixpaper chocolate itambe"};
         float chapa_por_caixa = 0.432;
         float mixpaper_por_caixa = 0.025;
