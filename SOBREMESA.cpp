@@ -117,7 +117,7 @@ int main() {
     } while (resposta == 's' || resposta == 'S');
     		cout << "-----------------------------------------";
     		cout << "    \n### Aperte ENTER para sair. ####\n";
-			cout << "         @@@ Sayonaha babaca! @@@     \n";
+			cout << "     @@@ Sayonaha babaca! @@@     \n";
     		return 0;
 }
 
