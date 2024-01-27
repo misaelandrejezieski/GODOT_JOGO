@@ -33,7 +33,7 @@ int main() {
                 strcpy(b.tipo_chapa1, "chapa verde");
                 strcpy(b.tipo_chapa2, "chapa verde");
             } else {
-            	cout << "Codigo invalido! \n ";
+            	cout << "Codigo invalido!";
             	system("pause");
             	system("cls");
 				return main();
