@@ -3,7 +3,7 @@ class PrimePack {
         char nome_linha[11] = "Prime Pack";
         char tipo_chapa1[14] = "chapa marrom";
         char tipo_chapa2[14] = "chapa amarela";
-        char nomes_produtos[5][50] = {"chocolate preto batavo", "chocolate preto 4x4 batavo", "chocolate branco batavo", "chocolate preto itambe", "chocolate preto 4x4 itambe"};
+        char nomes_produtos[5][50] = {"001-chocolate preto batavo", "002-chocolate preto 4x4 batavo", "003-chocolate branco batavo", "004-chocolate preto itambe", "005-chocolate preto 4x4 itambe"};
         char nomes_mixpaper[5][50] = {"mixpaper chocolate preto batavo", "mixpaper chocolate preto 4x4 batavo", "mixpaper chocolate preto itambe", "chocolate preto 4x4 itambe", "chocolate preto itambe"};
         float chapa_por_caixa = 0.209;
         float mixpaper_por_caixa = 0.025;
