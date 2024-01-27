@@ -33,7 +33,7 @@ int main() {
                 strcpy(b.tipo_chapa1, "chapa verde");
                 strcpy(b.tipo_chapa2, "chapa verde");
             } else {
-            	cout << "Codigo invalido!";
+            	cout << "Codigo invalido!\n";
             	system("pause");
             	system("cls");
 				return main();
@@ -60,10 +60,16 @@ int main() {
             if (p.codigo_produto == 3) {
              strcpy(p.tipo_chapa1, "chapa amarela");
              strcpy(p.tipo_chapa2, "chapa amarela");
-           } else {
+           } else if (p.codigo_produto == 1 || p.codigo_produto == 2 || p.codigo_produto == 4 || p.codigo_produto == 5){
                    strcpy(p.tipo_chapa1, "chapa marrom");
                    strcpy(p.tipo_chapa2, "chapa amarela");
-           }
+           } else {
+            	cout << "Codigo invalido!\n";
+            	system("pause");
+            	system("cls");
+				return main();
+            	
+				}
 
             cout << "Insira o numero de caixas por producao: ";
             cin >> p.caixas_por_producao;
