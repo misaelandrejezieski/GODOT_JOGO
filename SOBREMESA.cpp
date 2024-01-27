@@ -133,19 +133,26 @@ int main() {
 
         } else if (escolha == 4){
 			FormsealR f;
-    		cout << "Insira o codigo do produto: ";
+			 for(int i = 0; i < 7; i++) {
+       			for(int j = 0; j < 50; j++) {
+            		printf("%c ", b.nomes_produtos[i][j]);
+        		}
+       			 printf("\n");
+    		}
+    		cout << "\n Insira o codigo do produto: ";
     		cin >> f.codigo_produto;
     		
     		if (f.codigo_produto == 1 || f.codigo_produto == 2) {
              strcpy(f.tipo_chapa1, "chapa marrom");
              strcpy(f.tipo_chapa2, "chapa marrom");
-           } else {
+           }else if(f.codigo_produto == 3){
+		   		strcpy(f.tipo_chapa1, "chapa amarela");
+		   } else {
             	cout << "Codigo invalido!\n";
             	system("pause");
             	system("cls");
 				return main();
-            	
-				}
+           	}
 
     		cout << "Insira o numero de caixas por producao: ";
     		cin >> f.caixas_por_producao;
