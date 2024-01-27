@@ -25,7 +25,7 @@ int main() {
         if (escolha == 1) {
             Benco b;
             cout << "Insira o codigo do produto: ";
-            printf(b.codigo_produto[7],[50]);
+            printf(b.codigo_produto[7][50]);
             cin >> b.codigo_produto;
 
             if (b.codigo_produto == 1 || b.codigo_produto == 2 || b.codigo_produto == 3 || b.codigo_produto == 4 || b.codigo_produto == 7) {
