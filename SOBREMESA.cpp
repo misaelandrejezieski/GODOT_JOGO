@@ -32,7 +32,7 @@ int main() {
        			 printf("\n");
     		}
 
-            cout << "Insira o codigo do produto: ";
+            cout << "\nInsira o codigo do produto: ";
                   
             cin >> b.codigo_produto;
 
@@ -69,7 +69,7 @@ int main() {
         		}
        			 printf("\n");
     		}
-            cout << "Insira o codigo do produto: ";
+            cout << "\nInsira o codigo do produto: ";
             cin >> p.codigo_produto;
 
           
