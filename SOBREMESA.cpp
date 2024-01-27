@@ -24,11 +24,13 @@ int main() {
 
         if (escolha == 1) {
             Benco b;
-            cout << "Insira o codigo do produto: ";
             
-         for(int i = 0; i < 7; i++) {
-         printf("%d ", b.nomes_produtos[i]);
-        
+            for(int i = 0; i < 7; i++) {
+        	 printf("%d ", b.nomes_produtos[i]);
+			 }
+         
+            cout << "Insira o codigo do produto: ";
+                  
             cin >> b.codigo_produto;
 
             if (b.codigo_produto == 1 || b.codigo_produto == 2 || b.codigo_produto == 3 || b.codigo_produto == 4 || b.codigo_produto == 7) {
