@@ -95,8 +95,8 @@ int main() {
             p.total_production_time = (float) p.caixas_por_producao / 7.66 / 60;
 
             cout << "\nSerao necessarios " << p.total_chapa << " kg de " << p.tipo_chapa1 << endl;
-            cout << p.total_mixpaper << " kg de " << p.nomes_mixpaper[p.codigo_produto - 1] << " para produzir " << p.caixas_por_producao << " caixas de chocolate." << endl;
-            cout << "O tempo necessario para produzir " << p.caixas_por_producao << " caixas de chocolate e de " << p.total_production_time << " horas." << endl;
+            cout << p.total_mixpaper << " kg de " << p.nomes_mixpaper[p.codigo_produto - 1] << " para produzir " << p.caixas_por_producao << " caixas de " << p.nomes_produtos[p.codigo_produto] << "." << endl;
+            cout << "O tempo necessario para produzir " << p.caixas_por_producao << " caixas de" << p.nomes_produtos[p.codigo_produto] << " e de " << p.total_production_time << " horas." << endl;
 
         } else if (escolha == 3) {
             EltonFlan  e;
