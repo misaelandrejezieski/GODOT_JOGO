@@ -58,7 +58,7 @@ int main() {
             b.total_production_time = (float) b.caixas_por_producao / 7.6 /60;
 
             cout << "\nSerao necessarios " << b.total_chapa << " kg de " << b.tipo_chapa1 << endl;
-            cout << b.total_mixpaper << " kg de " << b.nomes_mixpaper[b.codigo_produto - 1] << " para produzir " << b.caixas_por_producao << " caixas de iogurte." << endl;
+            cout << b.total_mixpaper << " kg de " << b.nomes_mixpaper[b.codigo_produto - 1] << " para produzir " << b.caixas_por_producao << " caixas de " << b.codigo_produto[f.nomes_produtos] << endl;
             cout << "O tempo necessario para produzir " << b.caixas_por_producao << " caixas de iogurte e de " << b.total_production_time << " horas." << endl;
 
         } else if (escolha == 2) {
