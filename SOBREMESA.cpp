@@ -142,6 +142,7 @@ int main() {
 
         cout << "\n** Deseja inserir mais produtos? (s/n): ";
         cin >> resposta;
+        system("cls");
     } while (resposta == 's' || resposta == 'S');
     		cout << "-----------------------------------------";
     		cout << "    \n### Aperte ENTER para sair. ####\n";
