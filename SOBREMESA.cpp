@@ -27,13 +27,11 @@ int main() {
             
             for(int i = 0; i < 7; i++) {
        			for(int j = 0; j < 50; j++) {
-       				printf("-------------------------");
             		printf("%c ", b.nomes_produtos[i][j]);
         		}
        			 printf("\n");
     		}
 
-         
             cout << "Insira o codigo do produto: ";
                   
             cin >> b.codigo_produto;
@@ -65,6 +63,12 @@ int main() {
 
         } else if (escolha == 2) {
             PrimePack p;
+             for(int i = 0; i < 5; i++) {
+       			for(int j = 0; j < 50; j++) {
+            		printf("%c ", b.nomes_produtos[i][j]);
+        		}
+       			 printf("\n");
+    		}
             cout << "Insira o codigo do produto: ";
             cin >> p.codigo_produto;
 
