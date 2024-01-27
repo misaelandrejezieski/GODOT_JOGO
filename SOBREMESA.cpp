@@ -135,7 +135,7 @@ int main() {
 			FormsealR f;
 			 for(int i = 0; i < 7; i++) {
        			for(int j = 0; j < 50; j++) {
-            		printf("%c ", b.nomes_produtos[i][j]);
+            		printf("%c ", f.nomes_produtos[i][j]);
         		}
        			 printf("\n");
     		}
