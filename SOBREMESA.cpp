@@ -104,12 +104,16 @@ int main() {
 
         } else if (escolha == 3) {
             EltonFlan  e;
-             for(int i = 0; i < 5; i++) {
+            
+            printf("");
+            
+            /* for(int i = 0; i < 5; i++) {
        			for(int j = 0; j < 50; j++) {
             		printf("%c ", e.nomes_produtos[i][j]);
         		}
        			 printf("\n");
-    		}
+    		}*/
+    		
             cout << "\n Insira o codigo do produto: ";
             cin >> e.codigo_produto;
 
