@@ -64,12 +64,15 @@ int main() {
 
         } else if (escolha == 2) {
             PrimePack p;
-             for(int i = 0; i < 5; i++) {
+             
+            printf();
+			 
+			 /*for(int i = 0; i < 5; i++) {
        			for(int j = 0; j < 50; j++) {
             		printf("%c ", p.nomes_produtos[i][j]);
         		}
        			 printf("\n");
-    		}
+    		}*/
             cout << "\nInsira o codigo do produto: ";
             cin >> p.codigo_produto;
 
