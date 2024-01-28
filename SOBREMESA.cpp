@@ -73,7 +73,7 @@ int main() {
         		}
        			 printf("\n");
     		}*/
-            cout << "\nInsira o codigo do produto: ";
+            cout << "\n\nInsira o codigo do produto: ";
             cin >> p.codigo_produto;
 
           
