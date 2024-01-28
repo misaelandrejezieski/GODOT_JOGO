@@ -114,7 +114,7 @@ int main() {
        			 printf("\n");
     		}*/
     		
-            cout << "\n Insira o codigo do produto: ";
+            cout << "\n\nInsira o codigo do produto: ";
             cin >> e.codigo_produto;
 
           
