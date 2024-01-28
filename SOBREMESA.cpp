@@ -68,7 +68,9 @@
 	             
 	            printf("Escolha o produto desejado: \n001-chocolate preto batavo \n002-chocolate preto 4x4 batavo \n003-chocolate branco batavo \n004-chocolate preto itambe \n005-chocolate preto 4x4 itambe");
 				 
-				 /*for(int i = 0; i < 5; i++) {
+				 /*for para verificação de vetor:
+				 
+				 for(int i = 0; i < 5; i++) {
 	       			for(int j = 0; j < 50; j++) {
 	            		printf("%c ", p.nomes_produtos[i][j]);
 	        		}
