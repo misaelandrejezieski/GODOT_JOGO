@@ -65,7 +65,7 @@ int main() {
         } else if (escolha == 2) {
             PrimePack p;
              
-            printf();
+            printf("001-chocolate preto batavo \n002-chocolate preto 4x4 batavo \n003-chocolate branco batavo \n004-chocolate preto itambe \n005-chocolate preto 4x4 itambe");
 			 
 			 /*for(int i = 0; i < 5; i++) {
        			for(int j = 0; j < 50; j++) {
