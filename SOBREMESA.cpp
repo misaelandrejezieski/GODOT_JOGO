@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 #include <iostream>
 #include "Benco.h"
 #include "PrimePack.h"
