@@ -105,7 +105,7 @@ int main() {
         } else if (escolha == 3) {
             EltonFlan  e;
             
-            printf("");
+            printf("\n001-caramelo batavo \n002-caramelo 4x4 batavo \n003-frutas vermelhas batavo \n004-caramelo itambe \n005-caramelo 4x4 itambe");
             
             /* for(int i = 0; i < 5; i++) {
        			for(int j = 0; j < 50; j++) {
