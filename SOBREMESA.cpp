@@ -25,7 +25,7 @@ int main() {
         if (escolha == 1) {
             Benco b;
             printf("Escolha o produto desejado: \n001-morango Batavo", "\n002-tradicional Batavo", "\n003-morango itambe",
-	 "\n004-tradicional itambe", "\n005-light morango Batava", "\n006-light tradicional Batavo", "\n007-pessego Batavo"")
+	 "\n004-tradicional itambe", "\n005-light morango Batava", "\n006-light tradicional Batavo", "\n007-pessego Batavo""");
             for(int i = 0; i < 7; i++) {
        			for(int j = 0; j < 50; j++) {
             		printf("%c ", b.nomes_produtos[i][j]);
