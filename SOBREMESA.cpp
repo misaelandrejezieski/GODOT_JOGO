@@ -151,7 +151,7 @@ int main() {
        			 printf("\n");
     		}*/
     		
-    		cout << "\n Insira o codigo do produto: ";
+    		cout << "\n\nInsira o codigo do produto: ";
     		cin >> f.codigo_produto;
     		
     		if (f.codigo_produto == 1 || f.codigo_produto == 2) {
@@ -185,6 +185,7 @@ int main() {
         cin >> resposta;
         system("cls");
     } while (resposta == 's' || resposta == 'S');
+    		system("pause");
     		cout << "-----------------------------------------";
     		cout << "    \n### Aperte QUALQUER TECLA para sair. ####\n";
 			cout << "           Sayonaha PANACA!\n";
