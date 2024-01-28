@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 #include <iostream>
 #include "Benco.h"
 #include "PrimePack.h"
@@ -58,7 +59,7 @@ int main() {
 
             cout << "\nSerao necessarios " << b.total_chapa << " kg de " << b.tipo_chapa1 << endl;
             cout << b.total_mixpaper << " kg de " << b.nomes_mixpaper[b.codigo_produto - 1] << " para produzir " << b.caixas_por_producao << " caixas de " << b.nomes_produtos[b.codigo_produto - 1] << endl;
-            cout << "O tempo necessario para produzir " << b.caixas_por_producao << " caixas de " << b.nomes_produtos[b.codigo_produto -1] << " e de " << b.total_production_time << " horas." << endl;
+            cout << "O tempo necessario para produzir " << b.caixas_por_producao << " caixas de " << b.nomes_produtos[b.codigo_produto -1] << "e de " << b.total_production_time << " horas." << endl;
 
         } else if (escolha == 2) {
             PrimePack p;
