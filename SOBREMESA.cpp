@@ -65,7 +65,7 @@ int main() {
         } else if (escolha == 2) {
             PrimePack p;
              
-            printf("001-chocolate preto batavo \n002-chocolate preto 4x4 batavo \n003-chocolate branco batavo \n004-chocolate preto itambe \n005-chocolate preto 4x4 itambe");
+            printf("Escolha o produto desejado: \n001-chocolate preto batavo \n002-chocolate preto 4x4 batavo \n003-chocolate branco batavo \n004-chocolate preto itambe \n005-chocolate preto 4x4 itambe");
 			 
 			 /*for(int i = 0; i < 5; i++) {
        			for(int j = 0; j < 50; j++) {
@@ -105,7 +105,7 @@ int main() {
         } else if (escolha == 3) {
             EltonFlan  e;
             
-            printf("\n001-caramelo batavo \n002-caramelo 4x4 batavo \n003-frutas vermelhas batavo \n004-caramelo itambe \n005-caramelo 4x4 itambe");
+            printf("Escolha o produto desejado: \n001-caramelo batavo \n002-caramelo 4x4 batavo \n003-frutas vermelhas batavo \n004-caramelo itambe \n005-caramelo 4x4 itambe");
             
             /* for(int i = 0; i < 5; i++) {
        			for(int j = 0; j < 50; j++) {
@@ -141,12 +141,16 @@ int main() {
 
         } else if (escolha == 4){
 			FormsealR f;
-			 for(int i = 0; i < 3; i++) {
+			 
+			printf("Escolha o produto desejado: \n001-chocolate batavo \n002-chocolate itambe \n003-chocolate branco");
+			 
+			 /*for(int i = 0; i < 3; i++) {
        			for(int j = 0; j < 50; j++) {
             		printf("%c ", f.nomes_produtos[i][j]);
         		}
        			 printf("\n");
-    		}
+    		}*/
+    		
     		cout << "\n Insira o codigo do produto: ";
     		cin >> f.codigo_produto;
     		
