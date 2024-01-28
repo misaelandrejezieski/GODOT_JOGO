@@ -186,8 +186,8 @@ int main() {
         system("cls");
     } while (resposta == 's' || resposta == 'S');	
     		cout << "-----------------------------------------";
-    		cout << "    \n### Aperte QUALQUER TECLA para sair. ####\n";
-			cout << "           Sayonaha PANACA!\n";
+			cout << "           SAYONAHA PANACA!\n";
+			cout << "-----------------------------------------";
 			system("pause");
     		return 0;
 }
